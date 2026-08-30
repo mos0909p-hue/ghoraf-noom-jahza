@@ -4,45 +4,102 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>غرف نوم جاهزة - مستودع الدمام | أبو سما</title>
-<!-- TikTok Pixel أبو سما الصح -->
+<title>غرف نوم الشرقية 1850 ريال - ابو سما</title>
 <script>
 !function (w, d, t) {
   w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a)};
-  ttq.load('DA92FJBC77UC8FLJAQM0');
+  ttq.load('DA92FJBC77UC8FLJAQMO');
   ttq.page();
   ttq.track('ViewContent');
 }(window, document, 'ttq');
-function sendContact(){
-  ttq.track('Contact',{value:1850,currency:'SAR'});
-  setTimeout(function(){
-    window.location.href='https://wa.me/966538047559?text=ابي غرفة نوم الدمام 1850';
-  },300);
-  return false;
+
+function trackWA(m){
+  ttq.track('ClickButton',{content_name:m});
+  ttq.track('Contact',{value:1850,currency:'SAR',content_name:m});
+  ttq.track('SubmitForm',{content_name:m});
+  setTimeout(()=>{window.open('https://wa.me/966538047559?text=ابي '+encodeURIComponent(m)+' الدمام 1850','_blank')},300);
+}
+function trackCall(m){
+  ttq.track('ClickButton',{content_name:m});
+  ttq.track('Call',{value:1850,currency:'SAR',content_name:m});
+  ttq.track('Contact',{content_name:'اتصال '+m});
+  setTimeout(()=>{window.location.href='tel:+966538047559'},300);
 }
 </script>
 <style>
-body{font-family:Arial;background:#fdf8f0;margin:0}
-.box{max-width:420px;margin:0 auto;background:#fff;min-height:100vh}
-.hero img{width:100%;height:420px;object-fit:cover}
-.price{display:flex;gap:10px;padding:12px 16px;align-items:center}
-.new{font-size:28px;font-weight:900}
-.old{color:#999;text-decoration:line-through}
-.btn{width:100%;height:58px;background:#25D366;color:#fff;border:0;border-radius:14px;font-size:20px;font-weight:900;cursor:pointer}
+body{margin:0;background:#111;font-family:Arial;color:#fff}
+.wrap{max-width:430px;margin:0 auto;background:#111}
+.hero img{width:100%;height:520px;object-fit:cover}
+.info{padding:14px;background:#000}
+.price{font-size:38px;font-weight:900}
+.old{color:#777;text-decoration:line-through;font-size:18px;margin-right:10px}
+.btns{display:flex;gap:8px;padding:12px}
+.btn{flex:1;height:56px;border:0;border-radius:14px;font-weight:900;font-size:18px}
+.wa{background:#25D366;color:#fff}
+.call{background:#fff;color:#111;width:70px}
+.grid{padding:10px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.card{background:#1a1a1a;border-radius:14px;overflow:hidden}
+.card img{width:100%;height:180px;object-fit:cover}
+.card-body{padding:8px}
+.card-body button{width:100%;height:34px;border:0;border-radius:8px;font-weight:800;margin-top:6px}
 </style>
 </head>
 <body>
-<div class="box">
+<div class="wrap">
 <div class="hero">
 <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800">
+<div class="info">
+<div><span class="price">1850 ر.س</span><span class="old">2100 ر.س</span></div>
+<div>📍 غرف نوم جاهزة - مستودع الدمام - تركيب مجاني</div>
+<div class="btns" style="padding:12px 0 0">
+<button class="btn call" onclick="trackCall('رئيسي')">📞</button>
+<button class="btn wa" onclick="trackWA('رئيسي 1850')">اطلب واتساب الآن 💬</button>
 </div>
-<div class="price">
-<div class="new">1850 ر.س</div>
-<div class="old">2100 ر.س</div>
 </div>
-<div style="padding:12px 16px;font-weight:800">غرف نوم جاهزة - مستودع الدمام 📍<br><span style="font-weight:400;font-size:13px;color:#666">الدمام - الخبر - الظهران - الجبيل | تركيب مجاني</span></div>
-<div style="padding:16px">
-<button class="btn" onclick="return sendContact()">اطلب واتساب الآن 💬</button>
+</div>
+
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600">
+<div class="card-body">
+<div>موديل لؤلؤة</div>
+<div style="display:flex;gap:4px">
+<button style="background:#25D366;color:#fff" onclick="trackWA('لؤلؤة')">واتساب</button>
+<button style="background:#fff;color:#000" onclick="trackCall('لؤلؤة')">اتصال</button>
+</div>
+</div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600">
+<div class="card-body">
+<div>موديل فخامة</div>
+<div style="display:flex;gap:4px">
+<button style="background:#25D366;color:#fff" onclick="trackWA('فخامة')">واتساب</button>
+<button style="background:#fff;color:#000" onclick="trackCall('فخامة')">اتصال</button>
+</div>
+</div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1615873968403-89e068629265?w=600">
+<div class="card-body">
+<div>موديل نوفا</div>
+<div style="display:flex;gap:4px">
+<button style="background:#25D366;color:#fff" onclick="trackWA('نوفا')">واتساب</button>
+<button style="background:#fff;color:#000" onclick="trackCall('نوفا')">اتصال</button>
+</div>
+</div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600">
+<div class="card-body">
+<div>موديل ريتال</div>
+<div style="display:flex;gap:4px">
+<button style="background:#25D366;color:#fff" onclick="trackWA('ريتال')">واتساب</button>
+<button style="background:#fff;color:#000" onclick="trackCall('ريتال')">اتصال</button>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>
