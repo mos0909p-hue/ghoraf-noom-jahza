@@ -2,56 +2,95 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>غرف نوم جاهزة - الشرقية - تركيب مجاني</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>غرف نوم جاهزة في الدمام والخبر - تركيب اليوم - 0538047559</title>
+
+<!-- TikTok Pixel -->
 <script>
 !function (w, d, t) {
   w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a)};
   ttq.load('D492F38C77UC8F13AQM0');
-  ttq.page();
+  ttq.page(); // بس مشاهدة صفحة - مش تحويل
 }(window, document, 'ttq');
-</script>
-<script>
-function contactEvent(place){
-  ttq.track('Contact',{value:1,currency:'SAR',contents:[{content_id:place,content_type:'contact'}]});
-  ttq.track('ClickButton');
-  ttq.track('SubmitForm');
+
+// ده الحدث الصح - يشتغل فقط عند ضغط واتساب
+function sendContact(place){
+  ttq.track('Contact',{value:1850,currency:'SAR',contents:[{content_id:place,content_type:'product'}]});
+  ttq.track('ClickButton',{description:place});
+  return true;
 }
 </script>
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:system-ui;background:#fff7ef;padding-bottom:90px}
-.header{background:#fff;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 14px;position:sticky;top:0;z-index:10;border-bottom:1px solid #f0e0d0}
-.logo{font-weight:900;font-size:20px}.logo span{color:#c27a26}
-.phone{background:#111;color:#fff;padding:8px 14px;border-radius:20px;text-decoration:none;font-weight:800}
-.hero{padding:18px 14px;text-align:center}
-.badge{background:#111;color:#fff;display:inline-block;padding:6px 12px;border-radius:20px;font-size:12px;font-weight:800}
-h1{font-size:26px;font-weight:900;margin-top:8px}h1 b{color:#c27a26}
-.sub{margin-top:8px;color:#7a6652;font-weight:600}
-.gallery{padding:10px;display:grid;gap:12px;max-width:480px;margin:0 auto}
-.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.08);border:1px solid #f0e0d0}
-.card img{width:100%;height:220px;object-fit:cover}
-.cap{padding:12px;font-weight:800;display:flex;justify-content:space-between}
-.cap small{background:#e8f5e9;color:#1b7a2b;padding:4px 8px;border-radius:20px;font-size:11px}
-.cta{background:#111;color:#fff;border-radius:20px;padding:18px;margin:12px auto;max-width:480px;text-align:center}
-.btns{display:flex;gap:10px;margin-top:12px}
-.btn{flex:1;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:900;text-decoration:none}
-.btn-call{background:#fff;color:#111}.btn-wa{background:#25D366;color:#fff}
-.bottom{position:fixed;bottom:0;left:0;right:0;height:82px;background:#fff;border-top:1px solid #e9ddd0;display:flex;padding:10px;z-index:100}
-.inner{max-width:480px;margin:0 auto;width:100%;display:flex;gap:10px}
-.b-btn{flex:1;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:900;text-decoration:none}
-.b-call{background:#111;color:#fff}.b-wa{background:#25D366;color:#fff;animation:pulse 1.6s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 14px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+body{font-family:Tajawal,system-ui;background:#fff8ef;color:#1a1a1a;padding-bottom:92px}
+.header{position:sticky;top:0;z-index:99;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:2px solid #f0dfc8}
+.logo{font-weight:900;font-size:22px}.logo b{color:#c27a26}
+.call-top{background:#111;color:#fff;padding:10px 16px;border-radius:30px;text-decoration:none;font-weight:900}
+.hero{padding:18px 14px;text-align:center;background:linear-gradient(#fff,#fff2e0)}
+.badge{background:#111;color:#fff;padding:7px 14px;border-radius:20px;font-size:12px;font-weight:800;display:inline-block}
+h1{font-size:28px;font-weight:900;line-height:1.2;margin:12px 0}h1 span{color:#c27a26}
+.sub{color:#6b5a47;font-weight:700;margin-top:6px}
+.box{margin:12px auto;max-width:480px;padding:0 12px;display:grid;gap:14px}
+.card{background:#fff;border-radius:18px;overflow:hidden;border:1px solid #f0dfc8;box-shadow:0 10px 24px rgba(0,0,0,.06)}
+.card img{width:100%;height:240px;object-fit:cover;display:block}
+.info{padding:12px;display:flex;justify-content:space-between;align-items:center;font-weight:900}
+.info small{background:#e8f5e9;color:#1a7a2b;padding:5px 10px;border-radius:20px;font-size:11px}
+.price{text-align:center;padding:12px;font-weight:900}
+.price del{color:#999;margin-left:8px}.price b{color:#c27a26;font-size:22px}
+.cta-box{background:#111;color:#fff;border-radius:20px;padding:18px;text-align:center;margin:12px}
+.btns{display:flex;gap:10px;margin-top:14px}
+.btn{flex:1;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:900;text-decoration:none;font-size:16px}
+.btn-call{background:#fff;color:#111}.btn-wa{background:#25D366;color:#fff;font-size:18px}
+.bottom{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:2px solid #e8d5b8;padding:10px;z-index:999}
+.inner{max-width:480px;margin:0 auto;display:flex;gap:10px}
+.b-btn{flex:1;height:58px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:900;text-decoration:none;font-size:16px}
+.b-call{background:#111;color:#fff}.b-wa{background:#25D366;color:#fff;animation:pulse 1.5s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.7)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
 </style>
 </head>
 <body>
-<div class="header"><div class="logo">غرف <span>نوم</span> الشرقية</div><a class="phone" href="tel:+966538047559" onclick="contactEvent('call_header')">📞 0538047559</a></div>
-<div class="hero"><div class="badge">🔥 عروض الدمام والخبر - اليوم فقط</div><h1>غرف نوم <b>جاهزة للتركيب الفوري</b> في الشرقية</h1><div class="sub">🚚 توصيل وتركيب مجاني - الدمام / الخبر / الظهران / الجبيل</div></div>
-<div class="gallery">
-<div class="card"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800"><div class="cap">غرفة بيضاء 6 باب <small>استلام اليوم</small></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800"><div class="cap">غرفة بيج فاخرة <small>الأكثر طلباً</small></div></div>
+
+<div class="header">
+  <div class="logo">غرف <b>نوم</b> الشرقية</div>
+  <a class="call-top" href="tel:+966538047559" onclick="sendContact('call_header')">📞 0538047559</a>
 </div>
-<div class="cta"><h2>خصم 250 ريال للي يطلب اليوم</h2><div class="btns"><a class="btn btn-call" href="tel:+966538047559" onclick="contactEvent('call_cta')">اتصل الآن</a><a class="btn btn-wa" href="https://wa.me/966538047559?text=السلام%20عليكم%20ابي%20غرفة%20نوم%20في%20الشرقية" onclick="contactEvent('whatsapp_cta')">واتساب</a></div></div>
-<div class="bottom"><div class="inner"><a class="b-btn b-call" href="tel:+966538047559" onclick="contactEvent('call_bottom')">📞 اتصال</a><a class="b-btn b-wa" href="https://wa.me/966538047559?text=السلام%20عليكم%20ابي%20غرفة%20نوم%20في%20الشرقية" onclick="contactEvent('whatsapp_bottom')">واتساب - خصم 250</a></div></div>
+
+<div class="hero">
+  <div class="badge">🔥 مستودع الدمام - عرض اليوم فقط</div>
+  <h1>غرف نوم <span>جاهزة اليوم</span> في الشرقية</h1>
+  <div class="sub">🚚 توصيل وتركيب مجاني - الدمام / الخبر / الظهران / الجبيل / القطيف - دفع عند الاستلام</div>
+</div>
+
+<div class="box">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80">
+    <div class="info">غرفة مودرن 6 باب <small>✅ جاهزة اليوم</small></div>
+    <div class="price"><del>2100</del> <b>1850 ريال</b></div>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80">
+    <div class="info">غرفة بيج فاخرة <small>🔥 الأكثر طلباً</small></div>
+    <div class="price"><del>2300</del> <b>1950 ريال</b></div>
+  </div>
+</div>
+
+<div class="cta-box">
+  <h2>خصم 250 ريال للي يطلب من التيك توك اليوم</h2>
+  <p style="margin-top:6px;opacity:.8">اضغط واتساب واحجز غرفتك قبل نفاذ الكمية</p>
+  <div class="btns">
+    <a class="btn btn-call" href="tel:+966538047559" onclick="sendContact('call_middle')">اتصال</a>
+    <a class="btn btn-wa" href="https://wa.me/966538047559?text=السلام%20عليكم%20ابي%20غرفة%20نوم%20جاهزة%20في%20الشرقية%20-%20جاي%20من%20تيك%20توك" target="_blank" onclick="sendContact('whatsapp_middle')">واتساب 📲</a>
+  </div>
+</div>
+
+<div class="bottom">
+  <div class="inner">
+    <a class="b-btn b-call" href="tel:+966538047559" onclick="sendContact('call_bottom')">📞 اتصال</a>
+    <a class="b-btn b-wa" href="https://wa.me/966538047559?text=السلام%20عليكم%20ابي%20غرفة%20نوم%20جاهزة%20في%20الشرقية%20-%20جاي%20من%20تيك%20توك" target="_blank" onclick="sendContact('whatsapp_bottom_sticky')">واتساب - خصم 250 🎁</a>
+  </div>
+</div>
+
 </body>
 </html>
+
